@@ -1,0 +1,22 @@
+/outputs/
+/progress_records/
+/notebook_monitor/
+# Stata 数据文件：忽略所有子目录中的 dta 文件，兼容大小写
+*.[cC][sS][vV]
+# Node.js 依赖目录
+node_modules/
+
+# Local research runtime, model weights, and reproducible run artifacts
+/.venv_research/
+/.venv_research_dml/
+/models/
+/agents_other_materials/
+__pycache__/
+
+# 忽略任意层级中以 . 开头的文件夹及其内容
+.*/
+# 允许跟踪根目录的 .github 目录
+!/.github/
+
+# 需要共享根目录的 .vscode 配置时，取消下一行的注释
+!/.vscode/
